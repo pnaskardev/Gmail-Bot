@@ -6,7 +6,7 @@ const { google } = require('googleapis');
 
 
 const { loadSavedCredentialsIfExist, saveCredentials } = require('./utils/auth_utils.js');
-
+const {getRandomInterval}=require('./utils/utils.js');
 const SCOPES = ['https://www.googleapis.com/auth/gmail.modify'];
 const CREDENTIALS_PATH = path.join(process.cwd(), 'credentials.json');
 
@@ -75,5 +75,5 @@ app.use('/',(req,res,next)=>
 app.listen(3000,()=>
 {
     console.log('Server is running');
-    setInterval(executeFunction, 1 * 60 * 1000);
+    setInterval(executeFunction, getRandomInterval);
 })
