@@ -1,0 +1,27 @@
+{
+  "name": "listed_assignment",
+  "version": "1.0.0",
+  "description": "Gmail Bot for assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pnaskardev/Listed_Assignment.git"
+  },
+  "author": "pnaskardev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pnaskardev/Listed_Assignment/issues"
+  },
+  "homepage": "https://github.com/pnaskardev/Listed_Assignment#readme",
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.1",
+    "express": "^4.18.2",
+    "googleapis": "^118.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
