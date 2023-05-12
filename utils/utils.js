@@ -1,4 +1,4 @@
-module.exports = getRandomInterval() 
+function getRandomInterval() 
 {
     const random=Math.random();
     
@@ -9,3 +9,5 @@ module.exports = getRandomInterval()
     const interval =Math.floor(random*range)+45;
     return interval*1000;
 }
+
+module.exports = { getRandomInterval };

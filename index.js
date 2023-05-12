@@ -75,5 +75,5 @@ app.use('/',(req,res,next)=>
 app.listen(3000,()=>
 {
     console.log('Server is running');
-    setInterval(executeFunction, getRandomInterval);
+    setInterval(executeFunction, getRandomInterval());
 })
