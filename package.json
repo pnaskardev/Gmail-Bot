@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node index.js",
-    "dev":"nodemon index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/pnaskardev/Listed_Assignment#readme",
   "dependencies": {
     "@google-cloud/local-auth": "^2.1.1",
+    "base64url": "^3.0.1",
     "express": "^4.18.2",
     "googleapis": "^118.0.0"
   },
