@@ -7,6 +7,8 @@ const { google } = require('googleapis');
 
 const { loadSavedCredentialsIfExist, saveCredentials } = require('./utils/auth_utils.js');
 const {getRandomInterval}=require('./utils/utils.js');
+const {processNewEmails}=require('./process_emails.js');
+
 const SCOPES = ['https://www.googleapis.com/auth/gmail.modify'];
 const CREDENTIALS_PATH = path.join(process.cwd(), 'credentials.json');
 
