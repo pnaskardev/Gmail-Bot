@@ -57,11 +57,7 @@ async function processNewEmails(auth)
                 const replySubject = `${messageData.data.payload.headers.find(h => h.name === 'Subject').value}`;
                 const replyTo = messageData.data.payload.headers.find(h => h.name === 'Reply-To' || h.name === 'From').value;
                 const emailBody = `[THIS IS AN AUTOREPLY] Thanks for your email. I am on a vacation right now I will get back to you as soon as possible.`;
-                // const email = `From: "Priyanshu Naskar" priyanshunaskar89@gmail.com\r\n` +
-                //     `To: ${replyTo}\r\n` +
-                //     `Subject: ${replySubject}\r\n` +
-                //     `\r\n` +
-                //     `${emailBody}`;
+            
                 const email = `From: "Priyanshu Naskar" priyanshunaskar89@gmail.com\r\n` +
                         `To: ${replyTo}\r\n` +
                         `In-Reply-To: ${messageId}\r\n` +
